@@ -1,0 +1,12 @@
+# What is React?
+- A JS library for building user interfaces
+- It runs in the browser, not the server
+- User interfaces are basically what the user sees
+- React is all about using components for building user interfaces
+- You can split up any web page into components
+- For example, you can have the sidebar, header and content. You can split all these up into components
+- You'll have a header component, headline, sidebar and article. And so on and so forth. 
+- So, you don't have to build your entire webpage as a one big picture. You can build all these tiny things on their own.
+- It makes it easy for you to keep your code manageable whether you're working in a group or alone.
+- It makes it easy to reuse code. For example if you created a component for a button and want to reuse it again.
+- React components can be thought of as custom HTML elements. 
