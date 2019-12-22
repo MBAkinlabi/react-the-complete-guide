@@ -87,4 +87,75 @@ ReactDOM.render();
 ReactDOM.render(<Person />, document.querySelector('#p1'));
 ```
 - Now we're telling the ReactDOM where to render that function. Wow. It's rendered.
-- You can add arguments to your component by using `props`
+- Now let's change the second `div` or `person` to a `div`
+```html
+	<div id="p1"></div>
+
+	<div id="p2"></div>
+```
+- Let's say we've changed it to `id` and using `p2`. 
+- And we want to add a different data there.
+- Why React is so cool is that instead of writing this by creating another component function, we can configure dynamically. Let's see how we do that.
+- Add an argument to the `person` component by using `props`
+```js
+function Person(props) {
+  return (
+    <div class="person">
+      <h1>Max</h1>
+      <p>Your Age: 28</p>
+    </div>
+  );
+}
+```
+- Now go to this and add these attributes:
+```js
+ReactDOM.render(<Person name="Max" age="28" />, document.querySelector('#p1'));
+```
+- Now, you can output that in the `person` component.
+```js
+function Person(props) {
+  return (
+    <div class="person">
+      <h1>{props.name}</h1>
+      <p>Your Age: {props.age}</p>
+    </div>
+  );
+}
+```
+- Repeat the ReactDOM call to output the second in the interface.
+```js
+ReactDOM.render(<Person name="Max" age="28" />, document.querySelector('#p1'));
+
+ReactDOM.render(<Person name="Manu" age="29" />, document.querySelector('#p2'));
+```
+- As you can see, we only wrote the `HTML` once and we can reuse it over and over again.
+- In this case, we're calling the `ReactDOM`. There's nothing wrong with that, but we can do it a bit differently.
+- In the `HTML` change the `id` of the first `div` to `app` and remove the second `div`
+```html
+<div id="app"></div>
+```
+- Go back to the `JS` and remove the second `ReactDOM` call. So, there should only be one of them.
+```js
+ReactDOM.render(<Person name="Max" age="28" />, document.querySelector('#p1'));
+```
+- After doing that, at the top of the `ReactDOM` call, declare a variable call `app`
+```js
+var app = (
+
+);
+ReactDOM.render(<Person name="Max" age="28" />, document.querySelector('#p1'));
+```
+- Now your can put your `person` component inside the `app` variable. You have to wrap it around a `div` though. Put both `person` components there.
+```js
+var app = (
+	<div>
+		<Person name="Max" age="28" />
+		<Person name="Manu" age="29" />
+	</div>
+);
+```
+- Go to the `ReactDOM` call and place the `app` variable where the data used to be and replace the `id` with `#app`
+```js
+ReactDOM.render(app, document.querySelector('#app'));
+```
+- The two elements should now be next to each other. They're rendered in the same `div`
