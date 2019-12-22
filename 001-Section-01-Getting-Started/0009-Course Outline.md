@@ -1,0 +1,15 @@
+# Course Outline
+- Getting Started
+- Learn about the next Generation JavaScript features. It allows you to learn cleaner code.
+- Learn the React basics. Learn how to create components and communicate between components
+- Debugging
+- Styling Components
+- Learn more about components
+- HTTP Requests
+- Routing - a core feature of building single page apps
+- Forms and Validation
+- Redux
+- Authentication
+- Testing Introduction
+- Deployment
+- Bonus (Animations, Next Steps, Webpack)
