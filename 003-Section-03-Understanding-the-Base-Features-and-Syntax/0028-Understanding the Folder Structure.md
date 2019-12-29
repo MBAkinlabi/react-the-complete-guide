@@ -1,4 +1,5 @@
 # Understanding the Folder Structure
+- Link here: https://github.com/MBAkinlabi/my-app/commit/1d6cb5cd9bc26e95f8abd06ec2eefa8c93fe28c9
 - Now we now open the folder that was created. You can see everything there.
 - We've got a couple of configuration files on the root level.
 - The lock files can be ignored.
