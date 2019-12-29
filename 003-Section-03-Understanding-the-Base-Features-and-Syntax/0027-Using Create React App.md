@@ -30,3 +30,7 @@ cd my-app
 - This is the first demo app created for you.
 - The compiled successfully or server in the terminal should be kept on running. It shouldn't be closed. That's the server.
 - Don't quit. But you can always quit it if you want by hitting `control + c`
+- If you quit it, it'll stop watching your files. 
+- Whenever you change something in your code, the page will automatically reload and reflect the latest changes. 
+- You can quit the server when you're done developing. But as long you're developing, keep it open.
+- 
