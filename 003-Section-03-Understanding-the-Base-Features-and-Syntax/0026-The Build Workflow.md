@@ -1,0 +1,16 @@
+# The Build Workflow
+- We would build a React project on our own machine. 
+- We would set up a local project.
+- We need a workflow. It's recommended for SPAs and MPAs
+- We need to build a workflow to be able to optimize our code. We want to ship code that's as small as possible. And optmized as possible because it increases the performance of our app.
+- We want to use the next-gen JS features. They make our life much easier. 
+- Another reason why we need it is because we want to be more productive.
+- How do we achieve such workflow?
+- We need a dependency management tool npm or yarn. For example React, React DOM and all the build tools we'll need are dependencies.
+- We'll use NPM here. 
+- We'll also need a bundler. Webpack is highly recommended. We want to write modular code and split it up over multiple files. So that each file has a task and a clear focus.
+- We want to make sure all these code gets bundled into a couple of files in the end when we ship it.
+- The cool thing about Webpack is that it doesn't just bundle files, it also allows us to apply a couple of other build steps before it does this bundling.
+-  We'll use Compiler for the compilation of the next-gen JS. That requires another tool called Babel + Presets. We can hook them to the Webpack configuration, so that they are part of these bundling and optimization process. 
+- And finally, we want to use a development server to test our app locally on our machine. It's a web  server running on our machine.
+- It's not complex to do all these things.
