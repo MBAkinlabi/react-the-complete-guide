@@ -1,5 +1,6 @@
 # Adding Two Way Binding
 - https://github.com/MBAkinlabi/my-app/commit/029a67cca74ef3730d62c81236e6df29e8fa116d
+- We add an input and we can change the name in the field where the person `nameChangedHandler` was add without issue. We type and the name is changing as we do that. Cool stuff. The name won't change for persons who we didn't add the `nameChangedHandler` to. 
 ```js
 # person.js
 const person = (props) => {
